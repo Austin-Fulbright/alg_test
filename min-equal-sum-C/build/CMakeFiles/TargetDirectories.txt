@@ -1,0 +1,4 @@
+/home/shrimp-games/Projects/leetcode/min-equal-sum-C/build/CMakeFiles/min_equal_sum.dir
+/home/shrimp-games/Projects/leetcode/min-equal-sum-C/build/CMakeFiles/run_tests.dir
+/home/shrimp-games/Projects/leetcode/min-equal-sum-C/build/CMakeFiles/edit_cache.dir
+/home/shrimp-games/Projects/leetcode/min-equal-sum-C/build/CMakeFiles/rebuild_cache.dir

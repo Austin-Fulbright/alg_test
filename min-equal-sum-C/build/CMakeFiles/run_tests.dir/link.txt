@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/run_tests.dir/src/main.c.o -o run_tests  libmin_equal_sum.a 
