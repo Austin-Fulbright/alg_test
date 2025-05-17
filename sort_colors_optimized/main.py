@@ -18,29 +18,28 @@ def load_test_cases(filename):
         print(f"Error reading {filename}: {e}")
         sys.exit(1)
 
-def main():
+def boards_equal(board1, board2):
+    if len(board1) != len(board2):
+        return False
+    for i in range(len(board1)):
+        if board1[i] != board2[i]:
+            return False
+    return True
+
+def main(): 
     sol = Solution()
 
     test_cases = load_test_cases("test_cases.json")
     for i, test in enumerate(test_cases):
-        nums = test.get("nums")
+        board = test.get("board")
         expected = test.get("expected")
-        print(f"[test {i} nums = {nums} expected = {expected}]")
-        sol.sortColors(nums)
-
-        if nums is not None: 
-            isEqual = True 
-            if len(nums) != len(expected):
-                isEqual = False
-            for i in range(len(nums)):
-                if nums[i] != expected[i]:
-                    isEqual = False
-
-            print(f"[sort colors result = {nums} and expected = {expected}]")
-            if isEqual: 
-                print(f"test {i}: \033[92mPass\033[0m")
-            else:
-                print(f"test {i}: \033[91mFail\033[0m")
+        print(f"[test {i} nums = {board} expected = {expected}]")
+        sol.solveSudoku(board)
+        print(f"[solve sudoku board result = {board} and expected = {expected}]")
+        if boards_equal(board, expected): 
+            print(f"test {i}: \033[92mPass\033[0m")
+        else:
+            print(f"test {i}: \033[91mFail\033[0m")
     
        
 
