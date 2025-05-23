@@ -1,0 +1,13 @@
+{
+	"test_case": [
+		{
+			"nums": [3, 3, 3], 
+			"expected": "equilateral" 
+		},
+		{
+			"nums": [3, 4, 5], 
+			"expected": "scalene" 
+
+		}
+	]
+}

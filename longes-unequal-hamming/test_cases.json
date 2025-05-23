@@ -1,0 +1,39 @@
+{
+  "test_case": [
+    {
+      "words": ["a"],
+      "groups": [1],
+      "expected": ["a"]
+    },
+    {
+      "words": ["a", "b", "c"],
+      "groups": [1, 1, 1],
+      "expected": ["a"]
+    },
+    {
+      "words": ["ab", "aa", "ba", "bb"],
+      "groups": [1, 2, 1, 2],
+      "expected": ["ab", "aa", "ba", "bb"]
+    },
+    {
+      "words": ["abc", "xyz", "ayc", "xbc"],
+      "groups": [1, 2, 3, 1],
+      "expected": ["abc", "ayc"]
+    },
+    {
+      "words": ["bb", "bc", "bd"],
+      "groups": [1, 2, 1],
+      "expected": ["bb", "bc", "bd"]
+    },
+    {
+      "words": ["abc", "abc", "abd"],
+      "groups": [1, 2, 1],
+      "expected": ["abc", "abd"]
+    },
+    {
+      "words": ["abc", "abd", "abf", "abg", "cbg"],
+      "groups": [1, 2, 1, 2, 1],
+      "expected": ["abc", "abd", "abf", "abg", "cbg"]
+    }
+  ]
+}
