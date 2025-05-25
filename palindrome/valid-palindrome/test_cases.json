@@ -1,0 +1,44 @@
+{
+  "test_case": [
+    {
+      "s": "",
+      "expected": true
+    },
+    {
+      "s": "A man, a plan, a canal: Panama",
+      "expected": true
+    },
+    {
+      "s": "race a car",
+      "expected": false
+    },
+    {
+      "s": " ",
+      "expected": true
+    },
+    {
+      "s": "0P",
+      "expected": false
+    },
+    {
+      "s": ".,!",
+      "expected": true
+    },
+    {
+      "s": "ab_a",
+      "expected": true
+    },
+    {
+      "s": "No lemon, no melon",
+      "expected": true
+    },
+    {
+      "s": "Aa",
+      "expected": true
+    },
+    {
+      "s": "12321",
+      "expected": true
+    }
+  ]
+}

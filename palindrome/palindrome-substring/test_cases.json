@@ -1,0 +1,44 @@
+{
+  "test_case": [
+    {
+      "s": "a",
+      "expected": 1
+    },
+    {
+      "s": "aa",
+      "expected": 3
+    },
+    {
+      "s": "ab",
+      "expected": 2
+    },
+    {
+      "s": "aba",
+      "expected": 4
+    },
+    {
+      "s": "aaa",
+      "expected": 6
+    },
+    {
+      "s": "abc",
+      "expected": 3
+    },
+    {
+      "s": "abccba",
+      "expected": 9
+    },
+    {
+      "s": "ababa",
+      "expected": 9
+    },
+    {
+      "s": "abcba",
+      "expected": 7
+    },
+    {
+      "s": "racecar",
+      "expected": 10
+    }
+  ]
+}

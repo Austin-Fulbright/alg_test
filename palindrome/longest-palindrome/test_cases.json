@@ -1,0 +1,44 @@
+{
+  "test_case": [
+    {
+      "s": "",
+      "expected": ""
+    },
+    {
+      "s": "a",
+      "expected": "a"
+    },
+    {
+      "s": "ac",
+      "expected": "a"
+    },
+    {
+      "s": "babad",
+      "expected": "bab"
+    },
+    {
+      "s": "cbbd",
+      "expected": "bb"
+    },
+    {
+      "s": "forgeeksskeegfor",
+      "expected": "geeksskeeg"
+    },
+    {
+      "s": "aaaa",
+      "expected": "aaaa"
+    },
+    {
+      "s": "abacdfgdcaba",
+      "expected": "aba"
+    },
+    {
+      "s": "abacdfgdcabba",
+      "expected": "abba"
+    },
+    {
+      "s": "anana",
+      "expected": "anana"
+    }
+  ]
+}
