@@ -7,8 +7,6 @@ from solution import Solution
 
 def load_test_cases(filename):
 
-
-
     current_dir = Path(__file__).parent
     test_cases_path = current_dir / "test_cases.json"
 
@@ -22,21 +20,18 @@ def load_test_cases(filename):
 
 def main():
     sol = Solution()
+
     test_cases = load_test_cases("test_cases.json")
     for i, test in enumerate(test_cases):
-        nums = test.get("nums")
-        expected = ""#test.get("expected")
-        print(f"[test {i} nums = {nums} expected = {expected}]")
-        result = sol.countCompleteSubarrays(nums)
-
-        if result is not None:
-            
-            print(f"[combinationSum result = {result} and expected = {expected}]")
-            if result == expected:
-                print(f"test {i}: \033[92mPass\033[0m")
-            else:
-                print(f"test {i}: \033[91mFail\033[0m")
-
+        colors = test.get("colors")
+        edges = test.get("edges")
+        expected = test.get("expected")
+        result = sol.largestPathValue(colors, edges)
+        print(f"[largest path value: result = {result} and expected = {expected}]")
+        if result == expected: 
+            print(f"test {i}: \033[92mPass\033[0m")
+        else:
+            print(f"test {i}: \033[91mFail\033[0m")
     
        
 
