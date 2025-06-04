@@ -1,0 +1,50 @@
+{
+  "test_case": [
+    {
+      "word": "dbca",
+      "numFriends": 2,
+      "expected": "dbc"
+    },
+    {
+      "word": "gggg",
+      "numFriends": 4,
+      "expected": "g"
+    },
+    {
+      "word": "abc",
+      "numFriends": 1,
+      "expected": "abc"
+    },
+    {
+      "word": "abcd",
+      "numFriends": 4,
+      "expected": "d"
+    },
+    {
+      "word": "cba",
+      "numFriends": 2,
+      "expected": "cb"
+    },
+    {
+      "word": "aaaaa",
+      "numFriends": 3,
+      "expected": "aaa"
+    },
+    {
+      "word": "edcba",
+      "numFriends": 3,
+      "expected": "edc"
+    },
+    {
+      "word": "zzzzzz",
+      "numFriends": 5,
+      "expected": "zz"
+    },
+    {
+      "word": "leetcode",
+      "numFriends": 2,
+      "expected": "tcode"
+    }
+  ]
+}
+

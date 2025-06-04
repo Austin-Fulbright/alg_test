@@ -23,13 +23,11 @@ def main():
 
     test_cases = load_test_cases("test_cases.json")
     for i, test in enumerate(test_cases):
-        edges = test.get("edges")
-        node1 = test.get("node1")
-        node2 = test.get("node2")
+        graph = test.get("graph")
         expected = test.get("expected")
-        result = sol.closesMeetingNode(edges, node1, node2)
-        print(f"edges = {edges} node1 = {node1} node2 = {node2}") 
-        print(f"[largest path value: result = {result} and expected = {expected}]")
+        result = sol.catMouseGame(graph)
+        print(f"graph = {graph}") 
+        print(f"[cat and mouse game: result = {result} and expected = {expected}]")
         if expected == result: 
             print(f"test {i}: \033[92mPass\033[0m")
         else:
