@@ -9,7 +9,7 @@ class TreeNode:
 class Solution:
     def hasPathSum(self, root: TreeNode, targetSum: int)-> bool: 
         if not root:
-            return False
+            return False 
 
         def dfs(node: TreeNode, currentSum: int) -> bool:
             result = currentSum - node.val
